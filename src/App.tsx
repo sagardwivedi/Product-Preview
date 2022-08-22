@@ -4,7 +4,7 @@ import { Images } from "./assests/images";
 const App = () => {
   return (
     <div className="flex h-screen items-center justify-center bg-cream">
-      <div className="grid w-[90%] max-w-2xl grid-cols-1 overflow-hidden rounded-xl sm:grid-cols-2">
+      <div className="grid w-[90%] max-w-xl max-h-[36rem] grid-cols-1 overflow-hidden rounded-xl sm:grid-cols-2">
         <picture className="hidden sm:block">
           <source className="w-full h-full" srcSet={Images.ProductImageWebPD} type="image/webp" />
           <source className="w-full h-full" srcSet={Images.ProductImageD} type="image/jpeg" />
@@ -39,7 +39,7 @@ const App = () => {
           <div className="pt-4">
             <button className="flex w-full items-center justify-center space-x-2 rounded-xl bg-DarkCyan p-4 font-medium text-white ring-VeyDarkBlue ring-offset-1 hover:bg-VeyDarkBlue focus:ring-2">
               <img className="h-min w-min" src={Images.CartIcon} alt="cart" />
-              <p>Add to cart</p>
+              <span>Add to cart</span>
             </button>
           </div>
         </div>
