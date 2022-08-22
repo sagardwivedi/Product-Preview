@@ -18,7 +18,7 @@ const App = () => {
           alt="logo"
         />
         <div className="space-y-5 bg-white p-[23px] sm:space-y-6 sm:p-8">
-          <p className="uppercase tracking-[0.3rem] text-DarkGrayishBlue">
+          <p className="uppercase font-Mon tracking-[0.3rem] text-DarkGrayishBlue">
             perfume
           </p>
           <h2 className="font-Fra text-3xl font-bold text-VeyDarkBlue sm:text-4xl">
@@ -38,7 +38,7 @@ const App = () => {
           </p>
           <div className="pt-4">
             <button className="flex w-full items-center justify-center space-x-2 rounded-xl bg-DarkCyan p-4 font-medium text-white ring-VeyDarkBlue ring-offset-1 hover:bg-VeyDarkBlue focus:ring-2">
-              <img src={CartIcon} alt="" />
+              <img className="w-min h-min" src={CartIcon} alt="cart" />
               <span>Add to cart</span>
             </button>
           </div>
