@@ -7,6 +7,7 @@ const App = () => {
     <div className="flex h-screen items-center justify-center bg-cream">
       <div className="grid w-[90%] max-w-2xl grid-cols-1 overflow-hidden rounded-xl sm:grid-cols-2">
         <img
+          loading="eager"
           src={ProductImageM}
           className="h-full w-max bg-contain sm:hidden"
           alt="logo"
