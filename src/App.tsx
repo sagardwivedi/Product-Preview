@@ -8,12 +8,12 @@ const App = () => {
       <div className="grid w-[90%] max-w-2xl grid-cols-1 overflow-hidden rounded-xl sm:grid-cols-2">
         <img
           src={ProductImageM}
-          className="h-max w-max bg-contain sm:hidden"
+          className="h-full w-max bg-contain sm:hidden"
           alt="logo"
         />
         <img
           src={ProductImageD}
-          className="hidden h-max w-max bg-contain sm:block"
+          className="hidden h-full w-max bg-contain sm:block"
           alt="logo"
         />
         <div className="space-y-5 bg-white p-[23px] sm:space-y-6 sm:p-8">
