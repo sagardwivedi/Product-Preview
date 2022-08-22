@@ -21,7 +21,7 @@ const App = () => {
           className="h-full w-full bg-contain sm:hidden"
           alt="logo"
         />
-        <div className="sm:space-y-6 space-y-5 bg-white p-[23px] sm:p-8">
+        <div className="space-y-5 bg-white p-[23px] sm:space-y-6 sm:p-8">
           <p className="uppercase tracking-[0.3rem] text-DarkGrayishBlue">
             perfume
           </p>
@@ -40,15 +40,13 @@ const App = () => {
               <del>$169.99</del>
             </span>
           </p>
-          <div className="items-end">
-            <button
-              onClick={GiveMessage}
-              className="flex w-full items-center justify-center space-x-2 rounded-xl bg-DarkCyan p-4 font-medium text-white transition-colors duration-300 ease-in-out hover:bg-VeyDarkBlue"
-            >
-              <img src={CartIcon} alt="" />
-              <span>Add to cart</span>
-            </button>
-          </div>
+          <button
+            onClick={GiveMessage}
+            className="flex w-full items-center justify-center space-x-2 rounded-xl bg-DarkCyan p-4 font-medium text-white ring-1 ring-VeyDarkBlue transition duration-300 ease-in-out sm:hover:bg-VeyDarkBlue"
+          >
+            <img src={CartIcon} alt="" />
+            <span>Add to cart</span>
+          </button>
         </div>
       </div>
     </div>
