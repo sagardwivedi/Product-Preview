@@ -4,10 +4,6 @@ import ProductImageM from "./assests/images/image-product-mobile.jpg";
 import CartIcon from "./assests/images/icon-cart.svg";
 
 const App = () => {
-  const GiveMessage = () => {
-    alert("Hello World");
-  };
-
   return (
     <div className="flex h-screen items-center justify-center bg-cream">
       <div className="grid w-[90%] max-w-2xl grid-cols-1 overflow-hidden rounded-xl sm:grid-cols-2">
@@ -40,13 +36,12 @@ const App = () => {
               <del>$169.99</del>
             </span>
           </p>
-          <button
-            onClick={GiveMessage}
-            className="flex w-full items-center justify-center space-x-2 rounded-xl bg-DarkCyan p-4 font-medium text-white ring-1 ring-VeyDarkBlue transition duration-300 ease-in-out sm:hover:bg-VeyDarkBlue"
-          >
-            <img src={CartIcon} alt="" />
-            <span>Add to cart</span>
-          </button>
+          <div className="pt-4">
+            <button className="flex w-full items-center justify-center space-x-2 rounded-xl bg-DarkCyan p-4 font-medium text-white ring-VeyDarkBlue ring-offset-1 hover:bg-VeyDarkBlue focus:ring-2">
+              <img src={CartIcon} alt="" />
+              <span>Add to cart</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
